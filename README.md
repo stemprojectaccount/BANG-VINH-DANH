@@ -658,6 +658,7 @@
                 <div class="large-years">
                     <!-- Năm học 1 -->
                     <div class="large-year" onclick="redirectToWebsite('https://stemprojectaccount.github.io/2005-2010/')">
+                        <div class="year-period">2005-2010</div>
                         <i class="fas fa-star year-icon"></i>
                     </div>
                     
