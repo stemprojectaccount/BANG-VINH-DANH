@@ -635,7 +635,7 @@
     <div class="container">
         <!-- Header Section -->
         <header>
-            <img src="https://i.imgur.com/5X5p5p5.png" alt="Logo Trường" class="header-logo">
+            <img src="https://i.postimg.cc/zGwcmPH1/image.png" alt="Logo Trường" class="header-logo">
             <div class="header-content">
                 <div class="header-icon">
                     <i class="fas fa-graduation-cap"></i>
@@ -657,14 +657,14 @@
                 
                 <div class="large-years">
                     <!-- Năm học 1 -->
-                    <div class="large-year" onclick="redirectToWebsite('https://example.com/year1')">
+                    <div class="large-year" onclick="redirectToWebsite('https://stemprojectaccount.github.io/2005-2010/')">
                         <i class="fas fa-star year-icon"></i>
                         <div class="year-period">2005-2010</div>
                         <div class="year-label">Khóa 1</div>
                     </div>
                     
                     <!-- Năm học 2 -->
-                    <div class="large-year" onclick="redirectToWebsite('https://example.com/year2')">
+                    <div class="large-year" onclick="redirectToWebsite('https://stemprojectaccount.github.io/2010-2015/')">
                         <i class="fas fa-trophy year-icon"></i>
                         <div class="year-period">2010-2015</div>
                         <div class="year-label">Khóa 2</div>
