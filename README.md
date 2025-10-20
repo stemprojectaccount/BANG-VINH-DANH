@@ -640,9 +640,9 @@
                 <div class="header-icon">
                     <i class="fas fa-graduation-cap"></i>
                 </div>
-                <h1 class="glowing-text">VINH DANH</h1>
+                <h1 class="glowing-text">BẢNG VINH DANH</h1>
                 <p class="subtitle">Học Sinh Xuất Sắc - 20 Năm Học</p>
-                <p class="subtitle">Trường THPT Chuyên ABC</p>
+                <p class="subtitle">Trường THCS Nguyễn Khuyến</p>
                 <div class="header-decoration"></div>
             </div>
         </header>
@@ -659,36 +659,30 @@
                     <!-- Năm học 1 -->
                     <div class="large-year" onclick="redirectToWebsite('https://stemprojectaccount.github.io/2005-2010/')">
                         <i class="fas fa-star year-icon"></i>
-                        <div class="year-period">2005-2010</div>
-                        <div class="year-label">Khóa 1</div>
                     </div>
                     
                     <!-- Năm học 2 -->
                     <div class="large-year" onclick="redirectToWebsite('https://stemprojectaccount.github.io/2010-2015/')">
                         <i class="fas fa-trophy year-icon"></i>
                         <div class="year-period">2010-2015</div>
-                        <div class="year-label">Khóa 2</div>
                     </div>
                     
                     <!-- Năm học 3 -->
                     <div class="large-year" onclick="redirectToWebsite('https://stemprojectaccount.github.io/2015-2020/')">
                         <i class="fas fa-award year-icon"></i>
                         <div class="year-period">2015-2020</div>
-                        <div class="year-label">Khóa 3</div>
                     </div>
 
                     <!-- Năm học 4 -->
                     <div class="large-year" onclick="redirectToWebsite('https://stemprojectaccount.github.io/2020-2025/')">
                         <i class="fas fa-award year-icon"></i>
                         <div class="year-period">2020-2025</div>
-                        <div class="year-label">Khóa 4</div>
                     </div>
 
                     <!-- Năm học 5 -->
                     <div class="large-year" onclick="redirectToWebsite('https://stemprojectaccount.github.io/2025-2030/')">
                         <i class="fas fa-award year-icon"></i>
                         <div class="year-period">2025-2030</div>
-                        <div class="year-label">Khóa 5</div>
                     </div>
                 
                 <!-- Masters/PhD Button -->
