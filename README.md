@@ -674,12 +674,22 @@
                     <div class="large-year" onclick="redirectToWebsite('https://stemprojectaccount.github.io/2015-2020/')">
                         <i class="fas fa-award year-icon"></i>
                         <div class="year-period">2015-2020</div>
-                        <div2025-2030/')">
-                        <i class="fas fa-crown year-icon"></i>
+                        <div class="year-label">Khóa 3</div>
+                    </div>
+
+                    <!-- Năm học 4 -->
+                    <div class="large-year" onclick="redirectToWebsite('https://stemprojectaccount.github.io/2020-2025/')">
+                        <i class="fas fa-award year-icon"></i>
+                        <div class="year-period">2020-2025</div>
+                        <div class="year-label">Khóa 4</div>
+                    </div>
+
+                    <!-- Năm học 5 -->
+                    <div class="large-year" onclick="redirectToWebsite('https://stemprojectaccount.github.io/2025-2030/')">
+                        <i class="fas fa-award year-icon"></i>
                         <div class="year-period">2025-2030</div>
                         <div class="year-label">Khóa 5</div>
                     </div>
-                </div>
                 
                 <!-- Masters/PhD Button -->
                 <div class="masters-phd-section">
