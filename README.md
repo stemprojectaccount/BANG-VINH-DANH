@@ -772,5 +772,3 @@
             createFloatingElements();
         });
     </script>
-</body>
-</html>
