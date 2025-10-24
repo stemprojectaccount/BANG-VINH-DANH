@@ -36,7 +36,10 @@
         }
         
         body {
-            background: var(--gradient-primary);
+            background: 
+                linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),
+                url('https://i.postimg.cc/zXBpzDZ3/z7148807256666-b4968c2ce8c2d3face248112ae76bc62.jpg') no-repeat center center fixed;
+            background-size: cover;
             color: var(--text-light);
             min-height: 100vh;
             overflow-x: hidden;
@@ -51,7 +54,7 @@
             width: 100%;
             height: 100%;
             z-index: -3;
-            background: linear-gradient(-45deg, #1a2a6c, #2A4D9B, #3a6dc9, #4d8ae6, #1a2a6c);
+            background: linear-gradient(-45deg, rgba(26, 42, 108, 0.2), rgba(42, 77, 155, 0.2), rgba(58, 109, 201, 0.2), rgba(77, 138, 230, 0.2), rgba(26, 42, 108, 0.2));
             background-size: 400% 400%;
             animation: gradientShift 20s ease infinite;
         }
@@ -156,8 +159,8 @@
         .container {
             width: 100%;
             min-height: 100vh;
-            background: rgba(10, 25, 47, 0.85);
-            backdrop-filter: blur(20px);
+            background: rgba(10, 25, 47, 0.3);
+            backdrop-filter: blur(2px);
             position: relative;
             overflow: hidden;
         }
@@ -179,7 +182,7 @@
         /* ===== HEADER STYLES ===== */
         header {
             background: 
-                linear-gradient(135deg, rgba(42, 77, 155, 0.9), rgba(58, 109, 201, 0.8)),
+                linear-gradient(135deg, rgba(42, 77, 155, 0.4), rgba(58, 109, 201, 0.3)),
                 url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0,0 L100,0 L100,100 Z" fill="rgba(255,215,0,0.1)"/></svg>');
             color: var(--text-light);
             text-align: center;
@@ -641,9 +644,8 @@
                     <i class="fas fa-graduation-cap"></i>
                 </div>
                 <h1 class="glowing-text">BẢNG VINH DANH</h1>
-                <p class="subtitle">Học Sinh Xuất Sắc - 20 Năm Học</p>
-                <p class="subtitle">Trường THCS Nguyễn Khuyến</p>
-                 <p class="subtitle">TRƯỜNG THCS NGUYỄN KHUYẾN - XÃ EA KAR - TỈNH ĐẮK LẮK</p>
+                <p class="subtitle">HỌC SINH XUẤT XẮC CÁC NĂM HỌC</p>
+                <p class="subtitle">TRƯỜNG THCS NGUYỄN KHUYẾN - XÃ EA KAR - TỈNH ĐẮK LẮK</p>
                 <div class="header-decoration"></div>
             </div>
         </header>
@@ -686,6 +688,7 @@
                         <i class="fas fa-award year-icon"></i>
                         <div class="year-period">2025-2030</div>
                     </div>
+                </div>
                 
                 <!-- Masters/PhD Button -->
                 <div class="masters-phd-section">
