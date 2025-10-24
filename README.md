@@ -250,7 +250,7 @@
         
         /* CHỈNH SỬA: Làm chữ VINH DANH to hơn */
         .glowing-text {
-            font-size: 7rem; /* Tăng từ 5rem lên 7rem */
+            font-size: 6.5rem; /* Tăng từ 5rem lên 7rem */
             margin-bottom: 20px;
             text-shadow: 0 0 10px rgba(254 , 224 , 255 , 0 ), 0 0 20px rgba(255, 215, 0, 0.5), 0 0 30px rgba(255, 215, 0, 0 );
             position: relative;
