@@ -215,7 +215,7 @@
             position: absolute;
             top: 30px;
             left: 50px;
-            height: 180px;
+            height: 250px;
             width: auto;
             z-index: 10;
             filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.7));
@@ -273,7 +273,7 @@
         }
         
         .subtitle {
-            font-size: 2rem;
+            font-size: 2.1rem;
             margin-bottom: 10px;
             position: relative;
             color: #e0e0ff;
