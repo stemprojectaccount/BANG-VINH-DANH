@@ -692,7 +692,7 @@
                 
                 <!-- Masters/PhD Button -->
                 <div class="masters-phd-section">
-                    <div class="masters-phd-button" onclick="redirectToWebsite('https://example.com/masters-phd')">
+                    <div class="masters-phd-button" onclick="redirectToWebsite('https://stemprojectaccount.github.io/THAC-SI-TIEN-SI/')">
                         <i class="fas fa-user-graduate button-icon"></i>
                         <div class="button-text">THẠC SĨ & TIẾN SĨ</div>
                     </div>
