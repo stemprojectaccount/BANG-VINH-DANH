@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
@@ -38,7 +39,7 @@
         body {
             background: 
                 linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),
-                url('https://i.postimg.cc/zXBpzDZ3/z7148807256666-b4968c2ce8c2d3face248112ae76bc62.jpg') no-repeat center center fixed;
+                url('https://i.postimg.cc/yNGwbLmr/DSC08251.jpg') no-repeat center center fixed;
             background-size: cover;
             color: var(--text-light);
             min-height: 100vh;
@@ -644,7 +645,7 @@
                     <i class="fas fa-graduation-cap"></i>
                 </div>
                 <h1 class="glowing-text">BẢNG VINH DANH</h1>
-                <p class="subtitle">HỌC SINH XUẤT sẮC CÁC NĂM HỌC</p>
+                <p class="subtitle">HỌC SINH XUẤT SẮC CÁC NĂM HỌC</p>
                 <p class="subtitle">TRƯỜNG THCS NGUYỄN KHUYẾN - XÃ EA KAR - TỈNH ĐẮK LẮK</p>
                 <div class="header-decoration"></div>
             </div>
@@ -771,3 +772,5 @@
             createFloatingElements();
         });
     </script>
+</body>
+</html>
