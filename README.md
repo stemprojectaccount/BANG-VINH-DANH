@@ -20,6 +20,7 @@
             --secondary-color: #2A4D9B;
             --accent-color: #3a6dc9;
             --gold-color: #FFD700;
+            --gold-dark: #D4AF37; /* Màu vàng đậm hơn */
             --gold-light: #FFEC8B;
             --orange-color: #FF8C42;
             --text-light: #F8F6F2;
@@ -27,7 +28,7 @@
             --shadow-light: rgba(255, 255, 255, 0.1);
             --shadow-dark: rgba(0, 0, 0, 0.3);
             --gradient-primary: linear-gradient(135deg, #1a2a6c, #2A4D9B, #3a6dc9);
-            --gradient-gold: linear-gradient(45deg, #FFD700, #FFA500, #FFD700);
+            --gradient-gold: linear-gradient(45deg, #D4AF37, #B8860B, #D4AF37); /* Gradient vàng đậm hơn */
             --gradient-card: linear-gradient(135deg, rgba(58, 109, 201, 0.8), rgba(42, 77, 155, 0.9));
             --gradient-orange: linear-gradient(135deg, rgba(255, 140, 66, 0.9), rgba(232, 106, 51, 0.9));
             --transition-slow: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -233,9 +234,9 @@
         
         .header-icon {
             font-size: 4rem;
-            color: var(--gold-color);
+            color: var(--gold-dark); /* Sử dụng màu vàng đậm hơn */
             margin-bottom: 30px;
-            text-shadow: 0 0 15px rgba(255, 215, 0, 0.7);
+            text-shadow: 0 0 15px rgba(212, 175, 55, 0.7); /* Sử dụng màu vàng đậm hơn */
             animation: float 3s ease-in-out infinite;
         }
         
@@ -250,11 +251,11 @@
         
         /* CHỈNH SỬA: Làm chữ VINH DANH to hơn */
         .glowing-text {
-            font-size: 6rem; /* Tăng từ 5rem lên 7rem */
+            font-size: 6rem;
             margin-bottom: 20px;
-            text-shadow: 0 0 10px rgba(254 , 224 , 255 , 0 ), 0 0 20px rgba(255, 215, 0, 0.5), 0 0 30px rgba(255, 215, 0, 0 );
+            text-shadow: 0 0 10px rgba(254 , 224 , 255 , 0 ), 0 0 20px rgba(212, 175, 55, 0.5), 0 0 30px rgba(212, 175, 55, 0); /* Sử dụng màu vàng đậm hơn */
             position: relative;
-            background: linear-gradient(45deg, #FFD700, #FFA500, #FFD700);
+            background: linear-gradient(45deg, #D4AF37, #B8860B, #D4AF37); /* Gradient vàng đậm hơn */
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             font-weight: 700;
@@ -265,19 +266,29 @@
         
         @keyframes glow {
             0% {
-                text-shadow: 0 0 10px rgba(255, 215, 0, 0), 0 0 20px rgba(255, 215, 0, 0.5), 0 0 30px rgba(255, 215, 0, 0 );
+                text-shadow: 0 0 10px rgba(212, 175, 55, 0), 0 0 20px rgba(212, 175, 55, 0.5), 0 0 30px rgba(212, 175, 55, 0);
             }
             100% {
-                text-shadow: 0 0 15px rgba(255, 215, 0, 0.8), 0 0 25px rgba(255, 215, 0, 0.6), 0 0 35px rgba(255, 215, 0, 0.4);
+                text-shadow: 0 0 15px rgba(212, 175, 55, 0.8), 0 0 25px rgba(212, 175, 55, 0.6), 0 0 35px rgba(212, 175, 55, 0.4);
             }
         }
         
+        /* CHỈNH SỬA: Làm chữ "HỌC SINH XUẤT SẮC CÁC NĂM HỌC TRƯỜNG THCS NGUYỄN KHUYẾN - XÃ EA KAR - TỈNH ĐẮK LẮK" đậm và vàng hơn nhưng không quá sáng */
         .subtitle {
-            font-size: 2rem;
-            margin-bottom: 10px;
+            font-size: 2.2rem;
+            margin-bottom: 15px;
             position: relative;
-            color: #e0e0ff;
-            font-weight: 500;
+            color: #D4AF37; /* Màu vàng đậm hơn, không quá sáng */
+            font-weight: 800;
+            text-shadow: 0 0 8px rgba(212, 175, 55, 0.5), 0 0 15px rgba(212, 175, 55, 0.3); /* Hiệu ứng bóng nhẹ hơn */
+            background: linear-gradient(45deg, #D4AF37, #B8860B, #D4AF37); /* Gradient vàng đậm hơn */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            padding: 5px 0;
+            letter-spacing: 1px;
+            font-family: 'Playfair Display', serif;
+            text-transform: uppercase; /* Viết hoa toàn bộ để tạo cảm giác đậm hơn */
+            line-height: 1.3; /* Tăng khoảng cách dòng để dễ đọc */
         }
         
         .header-decoration {
@@ -286,7 +297,7 @@
             left: 0;
             width: 100%;
             height: 20px;
-            background: linear-gradient(90deg, transparent, var(--gold-color), transparent);
+            background: linear-gradient(90deg, transparent, var(--gold-dark), transparent); /* Sử dụng màu vàng đậm hơn */
             opacity: 0.5;
         }
         
@@ -305,10 +316,10 @@
             font-size: 3.5rem;
             text-align: center;
             margin-bottom: 60px;
-            background: linear-gradient(45deg, #FFD700, #FFA500, #FFD700);
+            background: linear-gradient(45deg, #D4AF37, #B8860B, #D4AF37); /* Gradient vàng đậm hơn */
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            text-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+            text-shadow: 0 0 15px rgba(212, 175, 55, 0.5); /* Sử dụng màu vàng đậm hơn */
             font-weight: 700;
             position: relative;
             display: inline-block;
@@ -323,7 +334,7 @@
             left: 20%;
             width: 60%;
             height: 4px;
-            background: linear-gradient(90deg, transparent, #FFD700, transparent);
+            background: linear-gradient(90deg, transparent, #D4AF37, transparent); /* Sử dụng màu vàng đậm hơn */
             border-radius: 2px;
         }
         
@@ -355,9 +366,9 @@
             justify-content: center;
             font-size: 2.8rem;
             font-weight: bold;
-            border: 2px solid rgba(255, 215, 0, 0.4);
+            border: 2px solid rgba(212, 175, 55, 0.4); /* Sử dụng màu vàng đậm hơn */
             transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3), 0 0 25px rgba(255, 215, 0, 0.2);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3), 0 0 25px rgba(212, 175, 55, 0.2); /* Sử dụng màu vàng đậm hơn */
             cursor: pointer;
             text-align: center;
             padding: 30px;
@@ -383,27 +394,27 @@
         
         .large-year:hover {
             transform: translateY(-15px) scale(1.05);
-            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4), 0 0 40px rgba(255, 215, 0, 0.4);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4), 0 0 40px rgba(212, 175, 55, 0.4); /* Sử dụng màu vàng đậm hơn */
         }
         
         .large-year .year-icon {
             font-size: 7rem;
             margin-bottom: 30px;
-            color: #FFD700;
-            text-shadow: 0 0 20px rgba(255, 215, 0, 0.7);
-            filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.5));
+            color: #D4AF37; /* Sử dụng màu vàng đậm hơn */
+            text-shadow: 0 0 20px rgba(212, 175, 55, 0.7); /* Sử dụng màu vàng đậm hơn */
+            filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.5)); /* Sử dụng màu vàng đậm hơn */
             transition: all 0.4s;
         }
         
         .large-year:hover .year-icon {
             transform: scale(1.2) rotate(10deg);
-            filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.8));
+            filter: drop-shadow(0 0 15px rgba(212, 175, 55, 0.8)); /* Sử dụng màu vàng đậm hơn */
         }
         
         .large-year .year-period {
             font-size: 3rem;
             margin-bottom: 15px;
-            background: linear-gradient(45deg, #FFD700, #FFA500);
+            background: linear-gradient(45deg, #D4AF37, #B8860B); /* Gradient vàng đậm hơn */
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             font-weight: 700;
@@ -434,7 +445,7 @@
             justify-content: center;
             font-size: 3rem;
             font-weight: bold;
-            border: 4px solid rgba(255, 215, 0, 0.7);
+            border: 4px solid rgba(212, 175, 55, 0.7); /* Sử dụng màu vàng đậm hơn */
             transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5), 0 0 40px rgba(255, 140, 66, 0.6);
             cursor: pointer;
@@ -469,24 +480,24 @@
         .masters-phd-button .button-icon {
             font-size: 5.5rem;
             margin-bottom: 20px;
-            color: #FFD700;
-            text-shadow: 0 0 30px rgba(255, 215, 0, 0.9);
-            filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.7));
+            color: #D4AF37; /* Sử dụng màu vàng đậm hơn */
+            text-shadow: 0 0 30px rgba(212, 175, 55, 0.9); /* Sử dụng màu vàng đậm hơn */
+            filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.7)); /* Sử dụng màu vàng đậm hơn */
             transition: all 0.4s;
         }
         
         .masters-phd-button:hover .button-icon {
             transform: scale(1.3) rotate(15deg);
-            filter: drop-shadow(0 0 25px rgba(255, 215, 0, 1));
+            filter: drop-shadow(0 0 25px rgba(212, 175, 55, 1)); /* Sử dụng màu vàng đậm hơn */
         }
         
         .masters-phd-button .button-text {
-            background: linear-gradient(45deg, #FFD700, #FFA500);
+            background: linear-gradient(45deg, #D4AF37, #B8860B); /* Gradient vàng đậm hơn */
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             font-weight: 800;
             letter-spacing: 1px;
-            text-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+            text-shadow: 0 0 15px rgba(212, 175, 55, 0.5); /* Sử dụng màu vàng đậm hơn */
             line-height: 1.2;
         }
         
@@ -517,6 +528,10 @@
             
             .glowing-text {
                 font-size: 5rem;
+            }
+            
+            .subtitle {
+                font-size: 1.8rem;
             }
             
             .large-years {
@@ -554,7 +569,7 @@
             }
             
             .subtitle {
-                font-size: 1.8rem;
+                font-size: 1.5rem;
             }
             
             .large-years {
@@ -600,7 +615,7 @@
             }
             
             .subtitle {
-                font-size: 1.5rem;
+                font-size: 1.3rem;
             }
             
             .large-year {
