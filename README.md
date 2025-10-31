@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
@@ -531,6 +532,7 @@
                 top: auto;
                 left: auto;
                 margin-bottom: 30px;
+                height: 180px;
             }
             
             .glowing-text {
@@ -567,8 +569,16 @@
         }
         
         @media (max-width: 768px) {
+            header {
+                padding: 80px 20px 60px;
+            }
+            
             .header-logo {
                 height: 120px;
+                position: relative;
+                margin: 0 auto 30px;
+                display: block;
+                left: auto;
             }
             
             .glowing-text {
@@ -577,6 +587,7 @@
             
             .subtitle {
                 font-size: 1.5rem; /* Điều chỉnh kích thước cho mobile */
+                line-height: 1.4;
             }
             
             .large-years {
@@ -610,11 +621,20 @@
             .section-title {
                 font-size: 2.5rem;
             }
+            
+            .main-content {
+                padding: 40px 20px;
+                gap: 60px;
+            }
         }
         
         @media (max-width: 576px) {
             .header {
-                padding: 80px 20px 60px;
+                padding: 60px 15px 40px;
+            }
+            
+            .header-logo {
+                height: 100px;
             }
             
             .glowing-text {
@@ -623,6 +643,7 @@
             
             .subtitle {
                 font-size: 1.3rem; /* Điều chỉnh kích thước cho mobile nhỏ */
+                line-height: 1.5;
             }
             
             .large-year {
@@ -646,6 +667,43 @@
             
             .section-title {
                 font-size: 2rem;
+            }
+            
+            .main-content {
+                padding: 30px 15px;
+                gap: 40px;
+            }
+        }
+        
+        @media (max-width: 400px) {
+            .glowing-text {
+                font-size: 2.2rem;
+            }
+            
+            .subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .large-year {
+                height: 150px;
+                font-size: 1.5rem;
+            }
+            
+            .large-year .year-icon {
+                font-size: 2.8rem;
+            }
+            
+            .masters-phd-button {
+                height: 110px;
+                font-size: 1.5rem;
+            }
+            
+            .masters-phd-button .button-icon {
+                font-size: 2.5rem;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
             }
         }
     </style>
