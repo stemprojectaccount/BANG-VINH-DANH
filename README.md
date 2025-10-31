@@ -782,15 +782,32 @@
             }
         }
         
-        // Hàm chuyển hướng đến website
+        // Hàm chuyển hướng đến website (thay thế trang hiện tại)
         function redirectToWebsite(url) {
-            window.open(url, '_blank');
+            // Thêm hiệu ứng loading trước khi chuyển trang
+            const container = document.querySelector('.container');
+            container.style.opacity = '0';
+            container.style.transition = 'opacity 0.5s ease';
+            
+            // Chuyển trang sau 0.5s để hiệu ứng loading hoàn tất
+            setTimeout(() => {
+                window.location.href = url;
+            }, 500);
         }
         
         // Khởi tạo khi trang được tải
         document.addEventListener('DOMContentLoaded', function() {
             createParticles();
             createFloatingElements();
+            
+            // Thêm hiệu ứng fade in khi trang tải
+            const container = document.querySelector('.container');
+            container.style.opacity = '0';
+            container.style.transition = 'opacity 1s ease';
+            
+            setTimeout(() => {
+                container.style.opacity = '1';
+            }, 100);
         });
     </script>
 </body>
