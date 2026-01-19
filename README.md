@@ -602,7 +602,7 @@
             
             .masters-phd-button .button-icon {
                 font-size: 5rem;
-                margin-right: 30px;
+                margin-right: 50px;
             }
             
             .masters-phd-button .button-text {
@@ -656,7 +656,7 @@
             }
             
             .masters-phd-button .button-icon {
-                font-size: 4.5rem;
+                font-size: 4rem;
                 margin-right: 25px;
             }
             
@@ -759,63 +759,12 @@
             }
             
             .masters-phd-button .button-subtext {
-                font-size: 1rem;
-            }
-        }
-        
-        @media (max-width: 400px) {
-            .glowing-text {
-                font-size: 2rem;
-            }
-            
-            .subtitle {
-                font-size: 1.1rem;
-            }
-            
-            .large-year {
-                height: 140px;
-                font-size: 1.5rem;
-            }
-            
-            .large-year .year-icon {
-                font-size: 2.8rem;
-            }
-            
-            .masters-phd-button {
-                width: 280px;
-                height: 150px;
-                padding: 0 12px;
-            }
-            
-            .masters-phd-button .button-icon {
-                font-size: 3rem;
-                margin-bottom: 12px;
-            }
-            
-            .masters-phd-button .button-text {
-                font-size: 1.6rem;
-            }
-            
-            .masters-phd-button .button-subtext {
-                font-size: 0.9rem;
-            }
-            
-            .section-title {
-                font-size: 1.6rem;
-            }
-        }
-        
-        /* Thêm style đặc biệt để đảm bảo không bị đè chữ */
-        .masters-phd-button .button-text-wrapper {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            min-height: 70px;
+                font-size: 1rem100px;
         }
         
         /* Đảm bảo khoảng cách an toàn */
         .masters-phd-button .safe-space {
-            padding: 10px 0;
+            padding: 70px 0;
         }
     </style>
 </head>
