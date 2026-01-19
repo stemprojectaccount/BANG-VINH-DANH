@@ -440,181 +440,202 @@
             font-weight: 500;
         }
         
-        /* ===== MASTERS/PHD BUTTON STYLES - ĐÃ CHỈNH SỬA ===== */
-        .masters-phd-section {
-            width: 100%;
-            text-align: center;
-            margin-top: 30px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
-        
-        .masters-phd-button {
-            background: linear-gradient(135deg, rgba(255, 140, 66, 0.95), rgba(232, 106, 51, 0.95));
-            border-radius: 35px;
-            width: 600px;
-            height: 200px;
-            display: flex;
-            flex-direction: row; /* Thay đổi từ column sang row */
-            align-items: center;
-            justify-content: space-between; /* Phân bố đều icon và text */
-            font-weight: bold;
-            border: 4px solid rgba(255, 215, 0, 0.8);
-            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5), 0 0 40px rgba(255, 140, 66, 0.6);
-            cursor: pointer;
-            text-align: center;
-            padding: 0 40px; /* Padding trái phải thay vì trên dưới */
-            margin: 0 auto;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .masters-phd-button::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.2), transparent);
-            transform: translateX(-100%) skewX(-15deg);
-            transition: transform 0.8s;
-        }
-        
-        .masters-phd-button:hover::before {
-            transform: translateX(100%) skewX(-15deg);
-        }
-        
-        .masters-phd-button:hover {
-            transform: translateY(-15px) scale(1.05);
-            box-shadow: 0 35px 70px rgba(0, 0, 0, 0.6), 0 0 60px rgba(255, 140, 66, 0.8);
-        }
-        
-         .masters-phd-button .button-icon {
-          font-size: 4rem;
-          color: #FFD700;
-          text-shadow: 0 0 30px rgba(255, 215, 0, 0.9);
-          filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.7));
-          transition: all 0.4s;
-          flex-shrink: 0;
-          margin-right: 50px; /* Điều chỉnh khoảng cách ngang với chữ */
-          align-self: center; /* Căn chỉnh dọc: center/flex-start/flex-end */
-          margin-top: -75; /* Điều chỉnh vị trí lên/xuống */
-        }
-        
-        .masters-phd-button:hover .button-icon {
-            transform: scale(1.1) rotate(5deg);
-            filter: drop-shadow(0 0 25px rgba(255, 215, 0, 1));
-        }
-        
-        .masters-phd-button .button-content {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start; /* Căn chữ về bên trái */
-            justify-content: center;
-            flex-grow: 1; /* Chiếm không gian còn lại */
-        }
-        
-        /* CHỈNH SỬA: Tối ưu chữ THẠC SĨ & TIẾN SĨ */
-        .masters-phd-button .button-text {
-            background: linear-gradient(45deg, #FFD700, #FFA500);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-weight: 800;
-            letter-spacing: 1.5px;
-            text-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
-            line-height: 1.3;
-            font-size: 3rem; /* Tăng kích thước chữ */
-            text-align: left; /* Căn trái */
-            width: 100%;
-            font-family: 'Playfair Display', serif;
-        }
-        
-        .masters-phd-button .button-subtext {
-            font-size: 1.2rem;
-            color: #FFF8E1;
-            margin-top: 5px;
-            text-align: left;
-            font-weight: 500;
-            letter-spacing: 0.5px;
-            opacity: 0.9;
-        }
-        
-        /* ===== RESPONSIVE STYLES ===== */
-        @media (max-width: 1200px) {
-            .large-years {
-                gap: 25px;
-            }
-            
-            .large-year {
-                width: 260px;
-                height: 300px;
-            }
-            
-            .masters-phd-button {
-                width: 550px;
-                height: 180px;
-                padding: 0 35px;
-            }
-            
-            .masters-phd-button .button-icon {
-                font-size: 5.5rem;
-            }
-            
-            .masters-phd-button .button-text {
-                font-size: 2.8rem;
-            }
-        }
-        
-        @media (max-width: 992px) {
-            .header-logo {
-                height: 150px;
-            }
-            
-            .glowing-text {
-                font-size: 4rem;
-            }
-            
-            .subtitle {
-                font-size: 1.8rem;
-            }
-            
-            .large-years {
-                gap: 20px;
-            }
-            
-            .large-year {
-                width: 220px;
-                height: 260px;
-                font-size: 2rem;
-            }
-            
-            .large-year .year-icon {
-                font-size: 5rem;
-            }
-            
-            .masters-phd-button {
-                width: 500px;
-                height: 160px;
-                padding: 0 30px;
-            }
-            
-            .masters-phd-button .button-icon {
-                font-size: 5rem;
-                margin-right: 15px;
-            }
-            
-            .masters-phd-button .button-text {
-                font-size: 2.5rem;
-            }
-            
-            .masters-phd-button .button-subtext {
-                font-size: 1.1rem;
-            }
-        }
+    /* ===== MASTERS/PHD BUTTON STYLES - ĐÃ CHỈNH SỬA HOÀN THIỆN ===== */
+    .masters-phd-section {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    }
+
+     .masters-phd-button {
+    background: linear-gradient(135deg, rgba(255, 140, 66, 0.95), rgba(232, 106, 51, 0.95));
+    border-radius: 25px; /* Đồng bộ với các nút năm học */
+    width: 350px; /* Giảm width để giống nút năm học */
+    height: 180px; /* Tăng height để có tỷ lệ đẹp */
+    display: flex;
+    flex-direction: column; /* Trở lại column để giống nút năm học */
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border: 3px solid rgba(255, 215, 0, 0.8); /* Giảm độ dày border */
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3), 0 0 25px rgba(255, 140, 66, 0.4); /* Giảm shadow */
+    cursor: pointer;
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    }
+
+    .masters-phd-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent, rgba(255,255,255,0.2), transparent);
+    transform: translateX(-100%) skewX(-15deg);
+    transition: transform 0.8s;
+    }
+
+    .masters-phd-button:hover::before {
+    transform: translateX(100%) skewX(-15deg);
+    }
+
+    .masters-phd-button:hover {
+    transform: translateY(-15px) scale(1.05);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4), 0 0 40px rgba(255, 140, 66, 0.6); /* Giảm shadow hover */
+    }
+
+    .masters-phd-button .button-icon {
+    font-size: 4.5rem; /* Giảm size icon */
+    color: #FFD700;
+    text-shadow: 0 0 20px rgba(255, 215, 0, 0.7); /* Giảm shadow */
+    filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.5));
+    transition: all 0.4s;
+    margin-bottom: 15px; /* Khoảng cách với chữ */
+    }
+
+    .masters-phd-button:hover .button-icon {
+    transform: scale(1.1) rotate(10deg); /* Tăng độ xoay */
+    filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.8));
+    }
+
+    .masters-phd-button .button-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+
+     /* CHỈNH SỬA: Tối ưu chữ THẠC SĨ & TIẾN SĨ - Cỡ chữ nhỏ hơn */
+     .masters-phd-button .button-text {
+    background: linear-gradient(45deg, #FFD700, #FFA500);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+    letter-spacing: 1.2px; /* Giảm letter-spacing */
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.5); /* Giảm shadow */
+    line-height: 1.2;
+    font-size: 2.2rem; /* Giảm kích thước chữ */
+    text-align: center;
+    width: 100%;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 5px;
+    }
+
+     .masters-phd-button .button-subtext {
+    font-size: 1rem; /* Giảm size */
+    color: #FFF8E1;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 0.3px; /* Giảm letter-spacing */
+    opacity: 0.9;
+    }
+
+    /* ===== RESPONSIVE STYLES - Cập nhật cho nút mới ===== */
+     @media (max-width: 1200px) {
+    .masters-phd-button {
+        width: 320px;
+        height: 170px;
+    }
+    
+    .masters-phd-button .button-icon {
+        font-size: 4rem;
+    }
+    
+    .masters-phd-button .button-text {
+        font-size: 2rem;
+    }
+    }
+
+     @media (max-width: 992px) {
+    .masters-phd-button {
+        width: 300px;
+        height: 160px;
+    }
+    
+    .masters-phd-button .button-icon {
+        font-size: 3.8rem;
+    }
+    
+    .masters-phd-button .button-text {
+        font-size: 1.9rem;
+    }
+    
+    .masters-phd-button .button-subtext {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .masters-phd-button {
+        width: 280px;
+        height: 150px;
+        padding: 15px;
+    }
+    
+    .masters-phd-button .button-icon {
+        font-size: 3.5rem;
+        margin-bottom: 12px;
+    }
+    
+    .masters-phd-button .button-text {
+        font-size: 1.8rem;
+    }
+    
+    .masters-phd-button .button-subtext {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .masters-phd-button {
+        width: 250px;
+        height: 140px;
+        padding: 12px;
+    }
+    
+    .masters-phd-button .button-icon {
+        font-size: 3rem;
+        margin-bottom: 10px;
+    }
+    
+    .masters-phd-button .button-text {
+        font-size: 1.6rem;
+    }
+    
+    .masters-phd-button .button-subtext {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .masters-phd-button {
+        width: 220px;
+        height: 130px;
+        padding: 10px;
+    }
+    
+    .masters-phd-button .button-icon {
+        font-size: 2.5rem;
+        margin-bottom: 8px;
+    }
+    
+    .masters-phd-button .button-text {
+        font-size: 1.4rem;
+    }
+    
+    .masters-phd-button .button-subtext {
+        font-size: 0.8rem;
+    }
+}
         
         @media (max-width: 768px) {
             header {
