@@ -502,7 +502,7 @@
           flex-shrink: 0;
           margin-right: 50px; /* Điều chỉnh khoảng cách ngang với chữ */
           align-self: center; /* Căn chỉnh dọc: center/flex-start/flex-end */
-          margin-top: -50; /* Điều chỉnh vị trí lên/xuống */
+          margin-top: -75; /* Điều chỉnh vị trí lên/xuống */
         }
         
         .masters-phd-button:hover .button-icon {
