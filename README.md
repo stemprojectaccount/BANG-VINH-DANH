@@ -500,9 +500,9 @@
           filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.7));
           transition: all 0.4s;
           flex-shrink: 0;
-          margin-right: 20px; /* Điều chỉnh khoảng cách ngang với chữ */
+          margin-right: 30px; /* Điều chỉnh khoảng cách ngang với chữ */
           align-self: center; /* Căn chỉnh dọc: center/flex-start/flex-end */
-          margin-top: 0; /* Điều chỉnh vị trí lên/xuống */
+          margin-top: -5; /* Điều chỉnh vị trí lên/xuống */
         }
         
         .masters-phd-button:hover .button-icon {
