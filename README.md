@@ -440,30 +440,33 @@
             font-weight: 500;
         }
         
-        /* ===== MASTERS/PHD BUTTON STYLES ===== */
+        /* ===== MASTERS/PHD BUTTON STYLES - ĐÃ CHỈNH SỬA ===== */
         .masters-phd-section {
             width: 100%;
             text-align: center;
             margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
         }
         
         .masters-phd-button {
-            background: linear-gradient(135deg, rgba(255, 140, 66, 0.9), rgba(232, 106, 51, 0.9));
+            background: linear-gradient(135deg, rgba(255, 140, 66, 0.95), rgba(232, 106, 51, 0.95));
             border-radius: 35px;
             width: 600px;
             height: 200px;
             display: flex;
-            flex-direction: column;
+            flex-direction: row; /* Thay đổi từ column sang row */
             align-items: center;
-            justify-content: center;
-            font-size: 2.5rem;
+            justify-content: space-between; /* Phân bố đều icon và text */
             font-weight: bold;
-            border: 4px solid rgba(255, 215, 0, 0.7);
+            border: 4px solid rgba(255, 215, 0, 0.8);
             transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5), 0 0 40px rgba(255, 140, 66, 0.6);
             cursor: pointer;
             text-align: center;
-            padding: 30px;
+            padding: 0 40px; /* Padding trái phải thay vì trên dưới */
             margin: 0 auto;
             position: relative;
             overflow: hidden;
@@ -486,35 +489,56 @@
         }
         
         .masters-phd-button:hover {
-            transform: translateY(-15px) scale(1.1);
+            transform: translateY(-15px) scale(1.05);
             box-shadow: 0 35px 70px rgba(0, 0, 0, 0.6), 0 0 60px rgba(255, 140, 66, 0.8);
         }
         
         .masters-phd-button .button-icon {
-            font-size: 5rem;
-            margin-bottom: 15px;
+            font-size: 6rem; /* Tăng kích thước icon */
             color: #FFD700;
             text-shadow: 0 0 30px rgba(255, 215, 0, 0.9);
             filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.7));
             transition: all 0.4s;
+            flex-shrink: 0; /* Đảm bảo icon không bị co lại */
+            margin-right: 20px; /* Khoảng cách giữa icon và text */
         }
         
         .masters-phd-button:hover .button-icon {
-            transform: scale(1.3) rotate(15deg);
+            transform: scale(1.1) rotate(5deg);
             filter: drop-shadow(0 0 25px rgba(255, 215, 0, 1));
         }
         
-        /* CHỈNH SỬA: Tối ưu chữ THẠC SĨ & TIẾN SĨ cho vừa nút */
+        .masters-phd-button .button-content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; /* Căn chữ về bên trái */
+            justify-content: center;
+            flex-grow: 1; /* Chiếm không gian còn lại */
+        }
+        
+        /* CHỈNH SỬA: Tối ưu chữ THẠC SĨ & TIẾN SĨ */
         .masters-phd-button .button-text {
             background: linear-gradient(45deg, #FFD700, #FFA500);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             font-weight: 800;
-            letter-spacing: 1px;
+            letter-spacing: 1.5px;
             text-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
-            line-height: 1.2;
-            font-size: 2.2rem;
-            padding: 0 10px;
+            line-height: 1.3;
+            font-size: 3rem; /* Tăng kích thước chữ */
+            text-align: left; /* Căn trái */
+            width: 100%;
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .masters-phd-button .button-subtext {
+            font-size: 1.2rem;
+            color: #FFF8E1;
+            margin-top: 5px;
+            text-align: left;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            opacity: 0.9;
         }
         
         /* ===== RESPONSIVE STYLES ===== */
@@ -529,12 +553,17 @@
             }
             
             .masters-phd-button {
-                width: 500px;
+                width: 550px;
                 height: 180px;
+                padding: 0 35px;
+            }
+            
+            .masters-phd-button .button-icon {
+                font-size: 5.5rem;
             }
             
             .masters-phd-button .button-text {
-                font-size: 2rem;
+                font-size: 2.8rem;
             }
         }
         
@@ -566,17 +595,22 @@
             }
             
             .masters-phd-button {
-                width: 450px;
+                width: 500px;
                 height: 160px;
-                font-size: 2.2rem;
+                padding: 0 30px;
             }
             
             .masters-phd-button .button-icon {
-                font-size: 4.5rem;
+                font-size: 5rem;
+                margin-right: 15px;
             }
             
             .masters-phd-button .button-text {
-                font-size: 1.8rem;
+                font-size: 2.5rem;
+            }
+            
+            .masters-phd-button .button-subtext {
+                font-size: 1.1rem;
             }
         }
         
@@ -617,16 +651,22 @@
             
             .masters-phd-button {
                 width: 90%;
-                height: 140px;
-                font-size: 2rem;
+                height: 150px;
+                padding: 0 25px;
+                flex-direction: row; /* Vẫn giữ row trên mobile */
             }
             
             .masters-phd-button .button-icon {
-                font-size: 3.5rem;
+                font-size: 4rem;
+                margin-right: 15px;
             }
             
             .masters-phd-button .button-text {
-                font-size: 1.6rem;
+                font-size: 2.2rem;
+            }
+            
+            .masters-phd-button .button-subtext {
+                font-size: 1rem;
             }
             
             .section-title {
@@ -666,17 +706,22 @@
             }
             
             .masters-phd-button {
-                height: 120px;
+                height: 130px;
                 font-size: 1.8rem;
-                padding: 20px;
+                padding: 0 20px;
             }
             
             .masters-phd-button .button-icon {
-                font-size: 3rem;
+                font-size: 3.5rem;
+                margin-right: 12px;
             }
             
             .masters-phd-button .button-text {
-                font-size: 1.4rem;
+                font-size: 1.9rem;
+            }
+            
+            .masters-phd-button .button-subtext {
+                font-size: 0.9rem;
             }
             
             .section-title {
@@ -708,16 +753,22 @@
             }
             
             .masters-phd-button {
-                height: 100px;
+                height: 110px;
                 font-size: 1.5rem;
+                padding: 0 15px;
             }
             
             .masters-phd-button .button-icon {
-                font-size: 2.5rem;
+                font-size: 3rem;
+                margin-right: 10px;
             }
             
             .masters-phd-button .button-text {
-                font-size: 1.2rem;
+                font-size: 1.4rem;
+            }
+            
+            .masters-phd-button .button-subtext {
+                font-size: 0.8rem;
             }
             
             .section-title {
@@ -790,11 +841,13 @@
                     </div>
                 </div>
                 
-                <!-- Masters/PhD Button -->
+                <!-- Masters/PhD Button - ĐÃ CHỈNH SỬA -->
                 <div class="masters-phd-section">
                     <div class="masters-phd-button" onclick="redirectToWebsite('https://stemprojectaccount.github.io/THAC-SI-TIEN-SI/')">
                         <i class="fas fa-user-graduate button-icon"></i>
-                        <div class="button-text">THẠC SĨ & TIẾN SĨ</div>
+                        <div class="button-content">
+                            <div class="button-text">THẠC SĨ & TIẾN SĨ</div>
+                        </div>
                     </div>
                 </div>
             </div>
