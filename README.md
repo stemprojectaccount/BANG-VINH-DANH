@@ -494,7 +494,7 @@
         }
         
          .masters-phd-button .button-icon {
-          font-size: 6rem;
+          font-size: 4rem;
           color: #FFD700;
           text-shadow: 0 0 30px rgba(255, 215, 0, 0.9);
           filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.7));
