@@ -493,14 +493,16 @@
             box-shadow: 0 35px 70px rgba(0, 0, 0, 0.6), 0 0 60px rgba(255, 140, 66, 0.8);
         }
         
-        .masters-phd-button .button-icon {
-            font-size: 6rem; /* Tăng kích thước icon */
-            color: #FFD700;
-            text-shadow: 0 0 30px rgba(255, 215, 0, 0.9);
-            filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.7));
-            transition: all 0.4s;
-            flex-shrink: 0; /* Đảm bảo icon không bị co lại */
-            margin-right: 20px; /* Khoảng cách giữa icon và text */
+         .masters-phd-button .button-icon {
+          font-size: 6rem;
+          color: #FFD700;
+          text-shadow: 0 0 30px rgba(255, 215, 0, 0.9);
+          filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.7));
+          transition: all 0.4s;
+          flex-shrink: 0;
+          margin-right: 20px; /* Điều chỉnh khoảng cách ngang với chữ */
+          align-self: center; /* Căn chỉnh dọc: center/flex-start/flex-end */
+          margin-top: 0; /* Điều chỉnh vị trí lên/xuống */
         }
         
         .masters-phd-button:hover .button-icon {
